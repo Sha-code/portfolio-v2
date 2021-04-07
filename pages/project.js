@@ -1,4 +1,3 @@
-import Head from "next/head";
 import ProjectCard from "../src/components/CardProject";
 
 const Project = () => {
@@ -33,32 +32,28 @@ const Project = () => {
         },
     ]
     return (
-        <>
-            <Head>
-                <title>Project</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
-                <div className="flex flex-wrap overflow-y-scroll overflow-x-hidden h-full">
-                    {
-                        projects.map((project) =>
-                            <div className="w-full md:w-1/3 p-2 my-auto">
-                                <ProjectCard
-                                    src={project.src}
-                                    title={project.title}
-                                    technology={project.technology}
-                                    link={project.link}
-                                />
-                            </div>
-                        )
-                    }
-                </div>
-                <div className="absolute bg-gray-50 bg-opacity-20 h-16 w-16 md:h-32 md:w-32 rounded-full -top-10 -right-2 md:-right-10 "></div>
-                <div className="absolute bg-gray-50 bg-opacity-20 h-10 w-10 rounded-full top-0 right-5 md:top-6 md:right-14 "></div>
-                <div className="absolute bg-gray-50 bg-opacity-25 h-16 w-16 md:h-24 md:w-24 rounded-full -bottom-2 md:-bottom-10 -left-10 "></div>
 
+        <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
+            <div className="flex flex-wrap overflow-y-scroll overflow-x-hidden h-full">
+                {
+                    projects.map((project) =>
+                        <div className="w-full md:w-1/3 p-2 mb-5">
+                            <ProjectCard
+                                src={project.src}
+                                title={project.title}
+                                technology={project.technology}
+                                link={project.link}
+                            />
+                        </div>
+                    )
+                }
             </div>
-        </>
+            <div className="absolute bg-gray-50 bg-opacity-20 h-16 w-16 md:h-32 md:w-32 rounded-full -top-10 -right-2 md:-right-10 "></div>
+            <div className="absolute bg-gray-50 bg-opacity-20 h-10 w-10 rounded-full top-0 right-5 md:top-6 md:right-14 "></div>
+            <div className="absolute bg-gray-50 bg-opacity-25 h-16 w-16 md:h-24 md:w-24 rounded-full -bottom-2 md:-bottom-10 -left-10 "></div>
+
+        </div>
+
     )
 }
 export default Project;
