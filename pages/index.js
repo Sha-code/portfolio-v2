@@ -1,65 +1,24 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="relative bg-gray-50 bg-opacity-20 p-5 md:p-10 rounded-xl h-full shadow-sm">
+        <div className="md:mt-48 md:w-2/5 mt-32 bg-gray-50 bg-opacity-20 p-6 rounded-xl shadow-xl w-4/5 mx-auto">
+          <h1 className="text-3xl py-2 mt-5 text-center">Shannone Controu</h1>
+          <h2 className="text-2xl py-2 mb-5 text-center text-textdark">Web Developer</h2>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-6 rounded-xl top-96 right-7 md:top-32 md:right-32 text-2xl animate-float text-textdark">Front-end</div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-6 rounded-xl -bottom-4 -left-3 md:bottom-24 md:left-24 text-2xl animate-floatFast text-textdark">Reactjs</div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-6 rounded-xl -left-3 -top-2 md:-left-7 text-2xl animate-floatSlow text-textdark">Nextjs</div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-3 rounded-xl shadow-2xl -bottom-6 -right-2 md:bottom-12 md:-right-7 text-lg animate-floatFast">Organized</div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-3 rounded-xl shadow-2xl top-16 left-32 md:top-18 md:left-56 text-lg animate-float">Autonomous</div>
+        <div className="absolute bg-gray-50 bg-opacity-20 p-3 rounded-xl shadow-2xl -top-8 -right-2 md:-top-2 md:-right-3 text-lg animate-floatSlow">Pedagogical</div>
+      </div>
+    </>
   )
 }
