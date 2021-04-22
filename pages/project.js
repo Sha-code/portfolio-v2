@@ -33,11 +33,11 @@ const Project = () => {
     ]
     return (
 
-        <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
+        <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 xl:p-10 rounded-xl h-full shadow-sm">
             <div className="flex flex-wrap overflow-y-scroll overflow-x-hidden h-full">
                 {
                     projects.map((project) =>
-                        <div className="w-full md:w-1/3 p-2 mb-5">
+                        <div className="w-full md:w-1/2 xl:w-1/3 p-2 mb-5">
                             <ProjectCard
                                 src={project.src}
                                 title={project.title}

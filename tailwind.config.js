@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
@@ -6,6 +8,7 @@ module.exports = {
     extend: {
       screens: {
         'xs': '361px',
+        ...defaultTheme.screens,
       },
       backgroundImage: theme => ({
         'principal': "url('/img/bg-gradient.svg')",

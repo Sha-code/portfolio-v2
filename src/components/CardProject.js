@@ -6,7 +6,7 @@ const CardProject = ({ src, title, technology, link }) => {
     return (
         <div className="bg-gray-50 bg-opacity-20 p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <a href={link} target="_blank" rel="noopener noreferrer">
-                <figure className="bg-gray-50 bg-opacity-20 relative h-52 mb-3 mx-auto rounded-xl">
+                <figure className="bg-gray-50 bg-opacity-20 relative h-64 xl:h-52 mb-3 mx-auto rounded-xl">
                     <Image
                         className="rounded-xl"
                         src={src}
