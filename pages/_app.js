@@ -15,7 +15,7 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="icon" href="/favicon.ico" />
       <script async defer data-domain="shannone.controu.com" src="https://plausible.io/js/plausible.js" />
     </Head>
-    <div className="realative bg-principal bg-cover bg-center bg-no-repeat h-screen w-full xl:flex text-textbase">
+    <div className="relative bg-principal bg-cover bg-center bg-no-repeat h-screen w-full xl:flex text-textbase">
       <div className="xl:w-1/5 xl:mx-12 xl:h-5/6 my-auto">
         <Navigation />
       </div>
