@@ -11,6 +11,10 @@ const MyApp = ({ Component, pageProps }) => (
     <Head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:url" content="https://shannone.controu.com" />
+      <meta property="og:title" content="Shannone controu Web Portfolio" />
+      <meta property="og:description" content="Discover more about Shannone's experiences and projects" />
+      <meta property="og:image" content="/img/shannone.png" />
       <title>Shannone Controu</title>
       <link rel="icon" href="/favicon.ico" />
       <script async defer data-domain="shannone.controu.com" src="https://plausible.io/js/plausible.js" />
