@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => (
       <meta property="og:url" content="https://shannone.controu.com" />
       <meta property="og:title" content="Shannone controu Web Portfolio" />
       <meta property="og:description" content="Discover more about Shannone's experiences and projects" />
-      <meta property="og:image" content="/img/shannone.png" />
+      <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C5603AQF75aa2sYtgyA/profile-displayphoto-shrink_800_800/0/1591021250011?e=1629936000&v=beta&t=fSbeCt6OheFVKWZufujoNy2d5oDB2Ko5MV76HYor2hI" />
       <title>Shannone Controu</title>
       <link rel="icon" href="/favicon.ico" />
       <script async defer data-domain="shannone.controu.com" src="https://plausible.io/js/plausible.js" />
