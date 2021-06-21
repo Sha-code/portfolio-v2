@@ -3,6 +3,13 @@ import ProjectCard from "../src/components/CardProject";
 const Project = () => {
     const projects = [
         {
+            id: 5,
+            title: "Deviens dev !",
+            src: "/img/logo-sha-code.png",
+            technology: "Nextjs - Tailwind",
+            link: "https://shacode.fr/",
+        },
+        {
             id: 4,
             title: "Mimesis",
             src: "/img/mimesis.png",
