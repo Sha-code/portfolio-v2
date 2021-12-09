@@ -1,22 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
+import useDarkMode from "../func/useDarkMode";
 
-import {
-    Instagram,
-    Linkedin,
-    Mail,
-    Twitter,
-} from 'react-feather';
+import { Moon, Sun } from 'react-feather';
 
 const Navigation = () => {
-    const router = useRouter();
-
+    const [colorTheme, setTheme] = useDarkMode();
     return (
-        <div className="bg-gray-50 bg-opacity-20 rounded-xl xl:p-4 flex flex-col items-center justify-between xl:py-10 shadow-sm h-full">
-            <div className="hidden xl:block">
-                <figure className="relative h-24 w-24 mx-auto shadow-lg rounded-full">
+        <div className="bg-gray-50 bg-opacity-20 rounded-xl py-4 px-10 grid grid-cols-7 gap-5 shadow-sm h-full text-textdark sticky top-0 z-50">
+            <div className="hidden xl:flex items-center col-span-2">
+                <figure className="relative h-12 w-12 shadow-lg rounded-full">
                     <Image
                         src="/img/shannone.png"
                         className="rounded-full object-cover object-left"
@@ -25,30 +19,30 @@ const Navigation = () => {
                         objectFit="cover"
                     />
                 </figure>
-                <h1 className="text-textdark text-2xl mt-4 font-semibold">Shannone Controu</h1>
+                <h1 className="text-xl font-semibold ml-3">Shannone Controu</h1>
             </div>
-            <div className="xl:bg-transparent xl:flex-col bg-gray-50 bg-opacity-20 p-2 lg:p-6 xl:p-2 flex text-xl items-center justify-between w-full">
-                <Link href="/">
-                    <a className={router.pathname == "/" ? "xl:px-10 text-xl text-textdark bg-gray-50 bg-opacity-20 shadow-md py-2 px-6 rounded-xl" : "my-4 px-6 xl:px-0"}>
-                        About
-                    </a>
-                </Link>
-                <Link href="/project">
-                    <a className={router.pathname == "/project" ? "xl:px-10 text-xl text-textdark bg-gray-50 bg-opacity-20 shadow-md py-2 px-6 rounded-xl" : "my-4 px-6 xl:px-0"}>
-                        Project
-                    </a>
-                </Link>
-                <Link href="/path">
-                    <a className={router.pathname == "/path" ? "xl:px-10 text-xl text-textdark bg-gray-50 bg-opacity-20 shadow-md py-2 px-6 rounded-xl" : "my-4 px-6 xl:px-0"}>
-                        Path
-                    </a>
-                </Link>
-            </div>
-            <div className="xl:relative xl:bg-transparent bg-gray-50 bg-opacity-20 absolute bottom-0 flex justify-around w-full py-2">
-                <a className="xl:p-1 bg-gray-50 bg-opacity-20 p-2 shadow-md rounded-xl hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="https://www.instagram.com/sha_code/?hl=fr" target="blank"><Instagram color="#6a6ba0" size={38} /></a>
-                <a className="xl:p-1 bg-gray-50 bg-opacity-20 p-2 shadow-md rounded-xl hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="https://www.linkedin.com/in/shannone-controu/" target="blank"><Linkedin color="#6a6ba0" size={38} /></a>
-                <a className="xl:p-1 bg-gray-50 bg-opacity-20 p-2 shadow-md rounded-xl hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="mailto:shannone.controu@gmail.com" target="blank"><Mail color="#6a6ba0" size={38} /></a>
-                <a className="xl:p-1 bg-gray-50 bg-opacity-20 p-2 shadow-md rounded-xl hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="https://twitter.com/sha_code" target="blank"><Twitter color="#6a6ba0" size={38} /></a>
+            <Link href="#about">
+                <a className="px-6 xl:px-0 my-auto text-lg hover:text-textdark">
+                    About
+                </a>
+            </Link>
+            <Link href="#project">
+                <a className="px-6 xl:px-0 my-auto text-lg hover:text-textdark">
+                    Project
+                </a>
+            </Link>
+            <Link href="#path">
+                <a className="px-6 xl:px-0 my-auto text-lg hover:text-textdark">
+                    Path
+                </a>
+            </Link>
+            <Link href="#contact">
+                <a className="px-6 xl:px-0 my-auto text-lg hover:text-textdark">
+                    Contact
+                </a>
+            </Link>
+            <div className="my-auto flex justify-end">
+                {colorTheme === "light" ? <Sun onClick={() => setTheme("light")} /> : <Moon onClick={() => setTheme("dark")} />}
             </div>
         </div>
     )

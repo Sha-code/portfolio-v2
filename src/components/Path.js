@@ -6,7 +6,6 @@ import { Archive, Book, Briefcase } from "react-feather";
 const Path = () => {
 
     return (
-
         <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
             <div className="w-full h-full overflow-y-scroll overflow-x-hidden">
                 <VerticalTimeline className="vertical-timeline-custom-line">
@@ -76,7 +75,7 @@ const Path = () => {
                         <p>
                             teacher in primary schools, group management, organization, team
                             work
-                    </p>
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         contentArrowStyle={{ borderRight: "7px solid  rgba(255, 255, 255, 0.2)" }}
