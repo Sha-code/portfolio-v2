@@ -8,7 +8,7 @@ import { Moon, Sun } from 'react-feather';
 const Navigation = () => {
     const [colorTheme, setTheme] = useDarkMode();
     return (
-        <div className="bg-gray-50 bg-opacity-20 rounded-xl py-4 px-10 grid grid-cols-7 gap-5 shadow-sm h-full text-textdark sticky top-0 z-50">
+        <div className="bg-gray-50 dark:bg-gray-700 bg-opacity-60 dark:bg-opacity-60 rounded-b-xl py-4 px-10 grid grid-cols-7 gap-5 shadow-sm h-full text-textdark sticky top-0 z-50">
             <div className="hidden xl:flex items-center col-span-2">
                 <figure className="relative h-12 w-12 shadow-lg rounded-full">
                     <Image

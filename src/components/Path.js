@@ -2,11 +2,24 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Archive, Book, Briefcase } from "react-feather";
+import Image from 'next/image';
 
 const Path = () => {
 
     return (
-        <div className="relative bg-gray-50 bg-opacity-20 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
+        <div className="bg-gray-50 bg-opacity-20 dark:bg-opacity-0 py-10 px-5 md:p-10 rounded-xl h-full shadow-sm">
+            <div className="pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-10">
+                <div className="absolute w-64 h-64 z-10 right-24">
+                    <Image src="/img/undraw_travel_mode_re_2lxo.svg" objectFit="contain" layout="fill" />
+                </div>
+                <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+                    <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Path</h1>
+                    <p className="mt-6 max-w-3xl text-xl text-gray-300">
+                        Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
+                        laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
+                    </p>
+                </div>
+            </div>
             <div className="w-full h-full overflow-y-scroll overflow-x-hidden">
                 <VerticalTimeline className="vertical-timeline-custom-line">
                     <VerticalTimelineElement
@@ -23,7 +36,7 @@ const Path = () => {
                                 Web Developer at Danae
                             </h3>
                             <h4 className="vertical-timeline-element-subtitle text-sm">Remote</h4>
-                            <p>Plateform web development with Next.js and Tailwind.css</p>
+                            <p>Plateform web development with Next.js, Tailwind.css and AWS lambda, Node.js</p>
                         </a>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -105,9 +118,6 @@ const Path = () => {
                     />
                 </VerticalTimeline>
             </div>
-            <div className="absolute bg-gray-50 bg-opacity-20 h-12 w-12 rounded-full top-2 left-2"></div>
-            <div className="absolute bg-gray-50 bg-opacity-20 h-14 w-14 rounded-full -bottom-5 -right-4 "></div>
-            <div className="absolute bg-gray-50 bg-opacity-25 h-24 w-24 rounded-full -top-10 -left-10 "></div>
         </div>
     )
 }

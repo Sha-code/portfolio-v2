@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
         <script async defer data-domain="shannone.controu.com" src="https://plausible.io/js/plausible.js" />
       </Head>
-      <div className="bg-pink-100 text-textbase">
+      <div className="bg-pink-100 dark:bg-gray-800 text-textbase">
         <Component {...pageProps} />
       </div>
     </>
