@@ -40,13 +40,12 @@ const Project = () => {
         // },
     ]
     return (
-        <div id="project" className="h-full">
-            <div className="pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-4 pt-5 md:pt-0 md:mx-12 h-full">
+        <div id="project" className="h-full pt-12 md:pt-24">
+            <div className="pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-4 pt-5 mt-10  md:pt-0 md:mx-12 h-full">
                 <div className="max-w-7xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white dark:opacity-100 text-center md:text-left md:text-5xl lg:text-6xl">Project</h1>
                     <p className="mt-6 max-w-3xl text-xl text-textdark dark:text-gray-300">
-                        Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-                        laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
+                        Here are a few projects I've worked on by myself.
                     </p>
                 </div>
             </div>

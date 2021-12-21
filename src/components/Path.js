@@ -8,7 +8,6 @@ const Path = () => {
 
     return (
         <div id="path" className="bg-gray-50 bg-opacity-20 dark:bg-opacity-0 rounded-xl h-full shadow-sm pt-10">
-
             <div className="relative pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-4 md:mx-12 mt-20">
                 <div className="absolute w-40 h-40 md:w-64 md:h-64 z-10 right-1 bottom-0 md:top-0 md:right-24">
                     <Image src="/img/undraw_travel_mode_re_2lxo.svg" objectFit="contain" layout="fill" />
@@ -16,8 +15,7 @@ const Path = () => {
                 <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Path</h1>
                     <p className="mt-6 max-w-3xl text-xl text-textdark dark:text-gray-300">
-                        Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-                        laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
+                        Here is a summary of my career path. Here you will find the key steps of my professional reconversion.
                     </p>
                 </div>
             </div>
@@ -33,7 +31,7 @@ const Path = () => {
                     icon={<Briefcase />}
                 >
                     <a href="https://danae.io/" target="blank">
-                        <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark">
+                        <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark dark:text-textbase">
                             Web Developer at Danae
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle text-sm">Remote</h4>
@@ -50,7 +48,7 @@ const Path = () => {
                     icon={<Briefcase />}
                 >
                     <a href="https://fr.funnl.fr/" target="blank">
-                        <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark">
+                        <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark dark:text-textbase">
                             Freelancing at Funnl
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle text-sm">Remote</h4>
@@ -67,7 +65,7 @@ const Path = () => {
                     icon={<Book />}
                 >
                     <a href="https://oclock.io/" target="blank">
-                        <h3 className="vertical-timeline-element-title  font-medium text-xl">O'clock School</h3>
+                        <h3 className="vertical-timeline-element-title font-medium text-xl">O'clock School</h3>
                         <h4 className="vertical-timeline-element-subtitle text-sm">Remote</h4>
                         <p>
                             Learning to code, to work in remote, to work on Pair-Programming and
@@ -84,10 +82,10 @@ const Path = () => {
                     iconStyle={{ background: "#6a6ba0", color: "#fff" }}
                     icon={<Briefcase />}
                 >
-                    <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark">School Teacher</h3>
+                    <h3 className="vertical-timeline-element-title font-medium text-xl text-textdark dark:text-textbase">School Teacher</h3>
                     <h4 className="vertical-timeline-element-subtitle text-sm">Nîmes, France</h4>
                     <p>
-                        teacher in primary schools, group management, organization, team
+                        Teacher in primary schools, group management, organization, team
                         work
                     </p>
                 </VerticalTimelineElement>
@@ -102,7 +100,7 @@ const Path = () => {
                 >
                     <a href="https://inspe-academiedemontpellier.fr/formation-initiale/master-meef/master-1er-degre" target="blank">
                         <h3 className="vertical-timeline-element-title font-medium text-xl">
-                            Master - education
+                            Master - Education
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle text-sm">
                             Montpellier, France
