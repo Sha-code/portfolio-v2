@@ -40,24 +40,21 @@ const Project = () => {
         // },
     ]
     return (
-        <div>
-            <div className="pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div id="project" className="h-full">
+            <div className="pb-20 bg-textbase bg-opacity-60 dark:bg-opacity-70 rounded-xl mx-4 pt-5 md:pt-0 md:mx-12 h-full">
                 <div className="max-w-7xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8">
-                    <h1 className="text-4xl font-extrabold tracking-tight text-white dark:opacity-100 md:text-5xl lg:text-6xl">Project</h1>
-                    <p className="mt-6 max-w-3xl text-xl text-gray-300">
+                    <h1 className="text-4xl font-extrabold tracking-tight text-white dark:opacity-100 text-center md:text-left md:text-5xl lg:text-6xl">Project</h1>
+                    <p className="mt-6 max-w-3xl text-xl text-textdark dark:text-gray-300">
                         Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
                         laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
                     </p>
                 </div>
             </div>
             <section
-                className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+                className="-mt-14 md:-mt-32 max-w-7xl mx-auto z-10 md:pb-32 px-4 sm:px-6 lg:px-8"
                 aria-labelledby="contact-heading"
             >
-                <h2 className="sr-only" id="contact-heading">
-                    Contact us
-                </h2>
-                <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-8">
+                <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:gap-8">
                     {
                         projects.map((project) =>
                             <ProjectCard

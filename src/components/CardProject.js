@@ -18,7 +18,7 @@ const CardProject = ({ src, title, technology, link }) => {
             </div>
             <div className="bg-gray-50 bg-opacity-20 rounded-b-xl py-4 px-6">
                 <h2>{title}</h2>
-                <p className="text-textdark">{technology}</p>
+                <p className="text-textdark dark:text-gray-300">{technology}</p>
             </div>
         </a>
 
