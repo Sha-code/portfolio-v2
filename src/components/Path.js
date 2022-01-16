@@ -15,7 +15,7 @@ const Path = () => {
                 <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Path</h1>
                     <p className="mt-6 max-w-3xl text-xl text-textdark dark:text-gray-300">
-                        Here is a summary of my career path. Here you will find the key steps of my professional reconversion.
+                        Here is a summary of my career path. You will find the key steps of my professional life.
                     </p>
                 </div>
             </div>
